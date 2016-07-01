@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="序列号："
+            android:textSize="20dp"/>
+        <EditText 
+            android:id="@+id/serialNum"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入摄像机序列号"
+            android:inputType="number"/>
+    </LinearLayout>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码："
+            android:textSize="20dp"/>
+        <EditText 
+            android:id="@+id/veryCode"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入摄像机验证码"/>
+    </LinearLayout>
+    <Button 
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

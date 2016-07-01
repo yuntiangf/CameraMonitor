@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture-image="http://schemas.monkey.com/android"
+    android:id="@+id/realplay_display_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+         android:id="@+id/realplay_area"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content" >
+         
+         <SurfaceView
+	        android:id="@+id/video"
+	        android:layout_width="fill_parent"
+	        android:layout_height="320dp"
+	        android:layout_alignParentLeft="true" />
+	       <LinearLayout 
+		       android:id="@+id/realplay_record_ly"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:background="@drawable/play_video_time_bg"
+		       android:gravity="center"
+		       android:visibility="gone">
+		       <ImageView 
+		           android:id="@+id/realplay_record_iv"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:background="@drawable/play_video_record"
+		           android:scaleType="fitXY"/>
+		       <TextView 
+		           android:id="@+id/realplay_record_tv"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:text="00:25"
+		           android:textColor="#ffffff"
+		           android:textSize="15dp"/>
+   		</LinearLayout>
+   		<LinearLayout
+                android:id="@+id/realplay_loading_pb_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center" 
+                android:layout_centerInParent="true">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminateDrawable="@drawable/common_refresh_indeterminate" />
+
+                <TextView
+                    android:id="@+id/realplay_loading_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="0%"
+                    android:textColor="#adadad"
+                    android:textSize="18dp" />
+            </LinearLayout> 
+   </RelativeLayout>
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center">
+       <ImageButton 
+           android:id="@+id/capture"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/capture"
+           android:onClick="onClick"/>
+       <FrameLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <ImageButton 
+	           android:id="@+id/record"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:background="@drawable/record_now"
+	           android:onClick="onClick"/>
+           <ImageButton 
+	           android:id="@+id/record_start"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:background="@drawable/record_now_startl"
+	           android:onClick="onClick"
+	           android:visibility="gone"/>
+       </FrameLayout>
+       
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.cameramonitor.SjrsSurfaceView
+        android:id="@+id/video"
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/but_up" />
+
+            <Button
+                android:id="@+id/bt_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/but_down" />
+
+            <Button
+                android:id="@+id/bt_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/but_left" />
+
+            <Button
+                android:id="@+id/bt_rigth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/but_right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_up_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/but_up_left" />
+
+            <Button
+                android:id="@+id/bt_up_rigth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/but_up_right" />
+
+            <Button
+                android:id="@+id/bt_down_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/but_down_left" />
+
+            <Button
+                android:id="@+id/bt_down_rigth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/but_down_right" />
+			 
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <!-- 放大 -->
+            <Button 
+                android:id="@+id/bt_amplification" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/but_amplification" /> 
+            <!-- 缩小 -->
+            <Button 
+                android:id="@+id/bt_shrink" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/but_shrink" /> 
+             <!-- 抓图 -->
+            <Button 
+                android:id="@+id/bt_capture"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/but_capture" /> 
+                
+            <!-- 自动-->
+            <Button 
+                android:id="@+id/bt_auto"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/but_auto" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <!-- 录像 -->
+            <Button 
+                android:id="@+id/bt_record" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/but_record" /> 
+            <!-- 关机 -->
+            <Button 
+                android:id="@+id/bt_shutDown" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/but_shutDown" /> 
+            <!-- 重启 -->
+            <Button 
+                android:id="@+id/bt_reboot" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="@string/but_reboot" /> 
+        </TableRow>
+    </LinearLayout>
+</LinearLayout>
